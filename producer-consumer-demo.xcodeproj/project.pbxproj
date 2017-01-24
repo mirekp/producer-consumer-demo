@@ -12,7 +12,10 @@
 		FD0DA57B1E36A811001A5ADE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD0DA5791E36A811001A5ADE /* Main.storyboard */; };
 		FD0DA57D1E36A811001A5ADE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD0DA57C1E36A811001A5ADE /* Assets.xcassets */; };
 		FD0DA5801E36A811001A5ADE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD0DA57E1E36A811001A5ADE /* LaunchScreen.storyboard */; };
-		FD0DA58B1E36A811001A5ADE /* producer_consumer_demoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0DA58A1E36A811001A5ADE /* producer_consumer_demoTests.swift */; };
+		FD0DA5971E36A88A001A5ADE /* BlockingQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0DA5961E36A88A001A5ADE /* BlockingQueue.m */; };
+		FD0DA59C1E36BA5C001A5ADE /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0DA59B1E36BA5C001A5ADE /* Cell.swift */; };
+		FD0DA59E1E36D1B4001A5ADE /* BlockingQueue-swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0DA59D1E36D1B4001A5ADE /* BlockingQueue-swift.swift */; };
+		FD0DA5A01E36D696001A5ADE /* BlockingQueue-objc.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0DA59F1E36D696001A5ADE /* BlockingQueue-objc.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,8 +37,13 @@
 		FD0DA57F1E36A811001A5ADE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD0DA5811E36A811001A5ADE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD0DA5861E36A811001A5ADE /* producer-consumer-demoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "producer-consumer-demoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD0DA58A1E36A811001A5ADE /* producer_consumer_demoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = producer_consumer_demoTests.swift; sourceTree = "<group>"; };
-		FD0DA58C1E36A811001A5ADE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD0DA5951E36A88A001A5ADE /* producer-consumer-demo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "producer-consumer-demo-Bridging-Header.h"; sourceTree = "<group>"; };
+		FD0DA5961E36A88A001A5ADE /* BlockingQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockingQueue.m; sourceTree = "<group>"; };
+		FD0DA5981E36A898001A5ADE /* BlockingQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockingQueue.h; sourceTree = "<group>"; };
+		FD0DA59B1E36BA5C001A5ADE /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		FD0DA59D1E36D1B4001A5ADE /* BlockingQueue-swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BlockingQueue-swift.swift"; sourceTree = "<group>"; };
+		FD0DA59F1E36D696001A5ADE /* BlockingQueue-objc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BlockingQueue-objc.m"; sourceTree = "<group>"; };
+		FD0DA5A11E36D6CD001A5ADE /* BlockingQueue-objc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BlockingQueue-objc.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +68,6 @@
 			isa = PBXGroup;
 			children = (
 				FD0DA5741E36A811001A5ADE /* producer-consumer-demo */,
-				FD0DA5891E36A811001A5ADE /* producer-consumer-demoTests */,
 				FD0DA5731E36A811001A5ADE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -83,17 +90,15 @@
 				FD0DA57C1E36A811001A5ADE /* Assets.xcassets */,
 				FD0DA57E1E36A811001A5ADE /* LaunchScreen.storyboard */,
 				FD0DA5811E36A811001A5ADE /* Info.plist */,
+				FD0DA5981E36A898001A5ADE /* BlockingQueue.h */,
+				FD0DA5961E36A88A001A5ADE /* BlockingQueue.m */,
+				FD0DA5A11E36D6CD001A5ADE /* BlockingQueue-objc.h */,
+				FD0DA59F1E36D696001A5ADE /* BlockingQueue-objc.m */,
+				FD0DA59D1E36D1B4001A5ADE /* BlockingQueue-swift.swift */,
+				FD0DA5951E36A88A001A5ADE /* producer-consumer-demo-Bridging-Header.h */,
+				FD0DA59B1E36BA5C001A5ADE /* Cell.swift */,
 			);
 			path = "producer-consumer-demo";
-			sourceTree = "<group>";
-		};
-		FD0DA5891E36A811001A5ADE /* producer-consumer-demoTests */ = {
-			isa = PBXGroup;
-			children = (
-				FD0DA58A1E36A811001A5ADE /* producer_consumer_demoTests.swift */,
-				FD0DA58C1E36A811001A5ADE /* Info.plist */,
-			);
-			path = "producer-consumer-demoTests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +152,7 @@
 					FD0DA5711E36A811001A5ADE = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 9M2PVSJ7JD;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					FD0DA5851E36A811001A5ADE = {
@@ -202,6 +208,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD0DA5781E36A811001A5ADE /* ViewController.swift in Sources */,
+				FD0DA59C1E36BA5C001A5ADE /* Cell.swift in Sources */,
+				FD0DA5A01E36D696001A5ADE /* BlockingQueue-objc.m in Sources */,
+				FD0DA59E1E36D1B4001A5ADE /* BlockingQueue-swift.swift in Sources */,
+				FD0DA5971E36A88A001A5ADE /* BlockingQueue.m in Sources */,
 				FD0DA5761E36A811001A5ADE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,7 +220,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD0DA58B1E36A811001A5ADE /* producer_consumer_demoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,11 +348,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 9M2PVSJ7JD;
 				INFOPLIST_FILE = "producer-consumer-demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "mpe.producer-consumer-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "producer-consumer-demo/producer-consumer-demo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -352,11 +364,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 9M2PVSJ7JD;
 				INFOPLIST_FILE = "producer-consumer-demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "mpe.producer-consumer-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "producer-consumer-demo/producer-consumer-demo-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
